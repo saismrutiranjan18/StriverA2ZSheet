@@ -1,4 +1,4 @@
-/* Complete the function printNumber which takes an integer input from the user and prints it on the screen. */
+/* 1. Complete the function printNumber which takes an integer input from the user and prints it on the screen. */
 
 import java.util.Scanner;
 

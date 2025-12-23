@@ -1,3 +1,5 @@
+// 2. Data Types in Java 
+
 class DataTypes {
     // Question 2: Default values (class-level variables)
     static int defInt;
