@@ -1,3 +1,110 @@
+class DataTypes {
+    // Question 2: Default values (class-level variables)
+    static int defInt;
+    static double defDouble;
+    static char defChar;
+    static boolean defBool;
+
+    public static void main(String[] args) {
+
+        // Q1: Print all primitive data types
+        int a = 10;
+        double b = 10.5;
+        char c = 'A';
+        boolean d = true;
+
+        System.out.println(a);   // Output: 10
+        System.out.println(b);   // Output: 10.5
+        System.out.println(c);   // Output: A
+        System.out.println(d);   // Output: true
+
+
+        // Q2: Default values of data types
+        System.out.println(defInt);     // Output: 0
+        System.out.println(defDouble);  // Output: 0.0
+        System.out.println(defChar);    // Output: (blank character)
+        System.out.println(defBool);    // Output: false
+
+
+        // Q3: Type casting (widening + narrowing)
+        int x = 10;
+        double y = x;          // widening
+        double p = 10.9;
+        int q = (int) p;       // narrowing
+
+        System.out.println(y); // Output: 10.0
+        System.out.println(q); // Output: 10
+
+
+        // Q4: int vs long overflow
+        int m = 100000;
+        int n = 100000;
+        long result = (long) m * n;
+
+        System.out.println(result); // Output: 10000000000
+
+
+        // Q5: char to int (Unicode)
+        char ch = 'A';
+        int ascii = ch;
+
+        System.out.println(ascii); // Output: 65
+
+
+        // Q6: boolean strictness
+        boolean flag = true;
+        if (flag) {
+            System.out.println("Yes"); // Output: Yes
+        }
+
+
+        // Q7: primitive vs wrapper
+        int prim = 20;
+        Integer wrap = 20;
+
+        System.out.println(prim); // Output: 20
+        System.out.println(wrap); // Output: 20
+
+
+        // Q8: Autoboxing & Unboxing
+        Integer autoBox = 50;  // autoboxing
+        int unBox = autoBox;   // unboxing
+
+        System.out.println(unBox); // Output: 50
+
+
+        // Q9: Integer caching
+        Integer i1 = 100;
+        Integer i2 = 100;
+        Integer i3 = 200;
+        Integer i4 = 200;
+
+        System.out.println(i1 == i2); // Output: true
+        System.out.println(i3 == i4); // Output: false
+
+
+        // Q10: null with wrapper
+        Integer nullWrap = null;
+        // int crash = nullWrap;  // Runtime Error: NullPointerException
+
+
+        // Q11: String comparison
+        String s1 = "Java";
+        String s2 = "Java";
+
+        System.out.println(s1 == s2);        // Output: true
+        System.out.println(s1.equals(s2));   // Output: true
+
+
+        // Q12: Correct data type usage (DSA)
+        int num = 1_000_000;
+        long sum = (long) num * (num + 1) / 2;
+
+        System.out.println(sum); // Output: 500000500000
+    }
+}
+
+
 /* =====================================================
    DATA TYPES IN JAVA – QUICK REVISION NOTES
    =====================================================
